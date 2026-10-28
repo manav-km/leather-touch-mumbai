@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leather Touch | Master Handcrafted Leather Goods | Dharavi, Mumbai</title>
+  <meta name="description" content="Direct workshop pricing on full-grain lambskin jackets, executive briefcases, travel duffels, and bespoke monogrammed accessories. Express same-day delivery within 25km of Dharavi, Mumbai.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Strip -->
+  <aside class="top-announcement" aria-label="Workshop announcement">
+    <div class="container top-inner">
+      <span>✨ <strong>DIRECT ARTISAN BENCH PRICING:</strong> 100% Genuine Full-Grain Leather • Zero Luxury Mall Markups</span>
+      <div class="top-links">
+        <a href="tel:+919967896040">Direct Workshop: +91 99678 96040</a>
+        <span class="sep">|</span>
+        <span>Kala Killa, Dharavi, Mumbai</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <a href="#hero" class="brand-link" aria-label="Leather Touch Dharavi Home">
+        <div class="brand-monogram">LT</div>
+        <div>
+          <span class="brand-title">LEATHER TOUCH</span>
+          <span class="brand-tagline">MASTER ARTISAN WORKSHOP • DHARAVI MUMBAI</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#catalog">Collection</a></li>
+          <li><a href="#craft">Artisan Process</a></li>
+          <li><a href="#custom">Bespoke Monogramming</a></li>
+          <li><a href="#wholesale">B2B & Wholesale</a></li>
+          <li><a href="#reviews">Client Praise</a></li>
+          <li><a href="#workshop">Visit Workshop</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <button id="cartBtn" class="btn btn-secondary btn-sm" aria-label="View Shopping Cart">
+          <span>Bag</span> (<span id="cartCount">0</span>)
+        </button>
+        <button id="ownerBtn" class="btn btn-outline btn-sm" title="Artisan Owner Portal">Workshop Portal</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 25km Local Delivery Radius Banner -->
+    <section class="geofence-strip" id="geoBanner" aria-label="25km Mumbai Local Area Verification">
+      <div class="container geo-flex">
+        <div class="geo-info">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>Strict 25 KM Workshop Delivery Radius:</strong> Express direct hand-delivery is exclusively available within a 25 km radius of our Dharavi workshop.
+          </div>
+        </div>
+        <div class="geo-actions">
+          <button id="btnGps" class="btn btn-sm btn-ghost">Detect GPS</button>
+          <span class="sep">or</span>
+          <select id="mumbaiPinSelect" class="pin-select" aria-label="Select Mumbai Area Pincode">
+            <option value="">Select Mumbai / MMR Pincode</option>
+            <option value="400017">400017 - Dharavi / Sion (0.3 km)</option>
+            <option value="400051">400051 - BKC Bandra Kurla Complex (2.1 km)</option>
+            <option value="400050">400050 - Bandra West (3.5 km)</option>
+            <option value="400028">400028 - Dadar West (3.8 km)</option>
+            <option value="400013">400013 - Lower Parel (6.0 km)</option>
+            <option value="400018">400018 - Worli Sea Face (7.2 km)</option>
+            <option value="400069">400069 - Andheri East (9.8 km)</option>
+            <option value="400001">400001 - Fort / Colaba (13.5 km)</option>
+            <option value="400092">400092 - Borivali West (18.5 km)</option>
+            <option value="400703">400703 - Vashi, Navi Mumbai (17.8 km)</option>
+            <option value="400601">400601 - Thane West (21.4 km)</option>
+            <option value="421301">421301 - Kalyan City (36.0 km - Beyond 25km)</option>
+            <option value="410206">410206 - Panvel (38.5 km - Beyond 25km)</option>
+          </select>
+        </div>
+      </div>
+      <div id="geoNotice" class="container geo-feedback hidden"></div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-text-block">
+          <span class="artisan-badge">KALA KILLA WORKSHOP • DHARAVI, MUMBAI</span>
+          <h1 class="hero-heading">Handcrafted Full-Grain Leather. Straight From the Artisan's Hands.</h1>
+          <p class="hero-description">
+            Cut by eye, skived by hand, and saddle-stitched with waxed linen thread. We craft tailored motorcycle jackets, executive briefcases, and weekend duffels that develop a rich, luminous patina over decades of hard travel.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-unit">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Full-Grain Natural Hides</span>
+            </div>
+            <div class="stat-unit">
+              <span class="stat-num">YKK</span>
+              <span class="stat-label">Heavy Solid Brass Hardware</span>
+            </div>
+            <div class="stat-unit">
+              <span class="stat-num">25 KM</span>
+              <span class="stat-label">Express Local Dispatch</span>
+            </div>
+          </div>
+          <div class="hero-button-row">
+            <a href="#catalog" class="btn btn-primary btn-lg">Explore Handcrafted Collection</a>
+            <a href="#custom" class="btn btn-outline btn-lg">Request Custom Monogram</a>
+          </div>
+        </div>
+
+        <div class="hero-visual-block">
+          <div class="leather-seal-card">
+            <div class="seal-header">
+              <span class="seal-title">AUTHENTIC HIDE CERTIFICATION</span>
+              <span class="seal-serial">BATCH NO: DH-8492</span>
+            </div>
+            <div class="seal-body">
+              <div class="seal-row">
+                <span class="prop">Leather Classification:</span>
+                <span class="val">Full-Grain Buff & Nappa Lambskin</span>
+              </div>
+              <div class="seal-row">
+                <span class="prop">Tanning Discipline:</span>
+                <span class="val">Natural Drum-Dyed Vegetable Tannin</span>
+              </div>
+              <div class="seal-row">
+                <span class="prop">Hardware Metallics:</span>
+                <span class="val">Solid Antiqued Cast Brass</span>
+              </div>
+              <div class="seal-row">
+                <span class="prop">Synthetic PU Content:</span>
+                <span class="val" style="color:#ef4444; font-weight:700;">0.00% (Strictly Prohibited)</span>
+              </div>
+              <div class="seal-quote">
+                "Genuine leather breathes, ages with dignity, and tells the story of every journey you take."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Master Collection (Gated with 25km Rule) -->
+    <section class="section catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="sub-label">DIRECT FROM THE BENCH</span>
+          <h2 class="title-main">Handcrafted Masterpieces</h2>
+          <p class="desc-main">Every piece is individual. Crafted in limited batches. <strong>Orders within 25 km receive express workshop courier delivery.</strong></p>
+        </div>
+
+        <div class="catalog-grid" id="productGrid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Artisan Craftsmanship Standards -->
+    <section class="section craft-section" id="craft">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="sub-label">THE DHARAVI WORKSHOP HERITAGE</span>
+          <h2 class="title-main">The Difference Real Full-Grain Makes</h2>
+          <p class="desc-main">Commercial fashion brands use thin bonded leather scraps coated in plastic polyurethane. Here is how our Dharavi bench works:</p>
+        </div>
+
+        <div class="craft-grid">
+          <div class="craft-card">
+            <div class="craft-num">01</div>
+            <h3>Intact Epidermal Grain</h3>
+            <p>We preserve the tight, unbuffed grain layer of the hide. This natural grain provides maximum tensile strength, water repellency, and the ability to absorb natural conditioning oils.</p>
+          </div>
+
+          <div class="craft-card">
+            <div class="craft-num">02</div>
+            <h3>High-Stress Brass Riveting</h3>
+            <p>Handle anchor points and shoulder strap loops are double-reinforced with solid copper/brass hand-hammered rivets that never strip or pull free under airport travel loads.</p>
+          </div>
+
+          <div class="craft-card">
+            <div class="craft-num">03</div>
+            <h3>Heavy Duty #10 YKK Brass Zips</h3>
+            <p>No cheap nylon coil zips that derail after six months. We install chunky, hand-waxed antique brass teeth that glide smoother the more you use them.</p>
+          </div>
+
+          <div class="craft-card">
+            <div class="craft-num">04</div>
+            <h3>Bespoke Sizing & Alteration</h3>
+            <p>Every jacket can be custom tailored to your exact chest, sleeve, and shoulder measurements at no additional charge right at our Dharavi cutting table.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Monogramming & Bespoke Inquiry -->
+    <section class="section custom-section" id="custom">
+      <div class="container custom-grid">
+        <div class="custom-content">
+          <span class="sub-label">PERSONAL TOUCH</span>
+          <h2 class="title-main">Hot-Foil Monogramming & Custom Tailoring</h2>
+          <p>Make your leather heirloom uniquely yours. We offer traditional heat-embossed blind debossing or metallic 24K gold foil stamping for initials, names, or corporate crests.</p>
+
+          <div class="monogram-preview-card">
+            <div class="preview-leather-swatch" id="swatchPreview">
+              <span class="embossed-text" id="embossedOutput">MKM</span>
+            </div>
+            <div class="swatch-controls">
+              <label for="monogramInput">Enter 2 to 4 Initials for Live Preview:</label>
+              <input type="text" id="monogramInput" class="custom-input" value="MKM" maxlength="4" placeholder="Your Initials">
+            </div>
+          </div>
+        </div>
+
+        <div class="custom-form-wrap">
+          <form id="bespokeForm" class="bespoke-form">
+            <h3>Request Custom Sizing or Monogram</h3>
+            <div class="form-row">
+              <label for="bName">Your Name</label>
+              <input type="text" id="bName" class="form-input" required placeholder="Full Name">
+            </div>
+            <div class="form-row">
+              <label for="bPhone">Phone / WhatsApp</label>
+              <input type="tel" id="bPhone" class="form-input" required placeholder="+91 98XXXXXXXX">
+            </div>
+            <div class="form-row">
+              <label for="bProduct">Interested In</label>
+              <select id="bProduct" class="form-input" required>
+                <option value="jacket">Custom Tailored Biker/Bomber Jacket</option>
+                <option value="duffel">Grand Weekend Duffel with Monogram</option>
+                <option value="briefcase">Executive Laptop Briefcase with Brass Tag</option>
+                <option value="wallet">Personalized Full-Grain Wallet Set</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="bNotes">Measurements / Initials / Leather Preference</label>
+              <textarea id="bNotes" class="form-input" rows="3" placeholder="e.g. Chest 42 inches, Vintage Tan leather, Monogram initials MKM"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Bespoke Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wholesale & Dropshipping (Tiered MOQ) -->
+    <section class="section wholesale-section" id="wholesale">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="sub-label">DIRECT FACTORY COLLABORATIONS</span>
+          <h2 class="title-main">B2B Wholesale & Dropshipping Hub</h2>
+          <p class="desc-main">Supplying premium boutiques, corporate gifting partners, and independent leather brands globally directly from Dharavi's artisan hub.</p>
+        </div>
+
+        <div class="tier-grid">
+          <div class="tier-card">
+            <span class="tier-title">BOUTIQUE STARTER</span>
+            <div class="tier-moq">MOQ: 10 Pieces</div>
+            <div class="tier-discount">25% Factory Margin</div>
+            <p>Ideal for independent lifestyle stores and premium fashion retailers testing small batches.</p>
+            <ul class="tier-perks">
+              <li>Custom logo embossing included</li>
+              <li>Mix & match jacket/bag models</li>
+              <li>Domestic express dispatch</li>
+            </ul>
+          </div>
+
+          <div class="tier-card featured">
+            <div class="tier-badge">MOST POPULAR</div>
+            <span class="tier-title">CORPORATE GIFTING</span>
+            <div class="tier-moq">MOQ: 50 Pieces</div>
+            <div class="tier-discount">40% Factory Margin</div>
+            <p>Custom executive laptop sleeves, premium diaries, and monogrammed travel kits for corporate events.</p>
+            <ul class="tier-perks">
+              <li>Custom gift box packaging</li>
+              <li>Laser engraved company logo</li>
+              <li>Dedicated production supervisor</li>
+            </ul>
+          </div>
+
+          <div class="tier-card">
+            <span class="tier-title">GLOBAL EXPORT / DROPSHIP</span>
+            <div class="tier-moq">MOQ: 100+ Pieces</div>
+            <div class="tier-discount">52% Factory Margin</div>
+            <p>Full white-label manufacturing with international air shipping documentation and export certifications.</p>
+            <ul class="tier-perks">
+              <li>Full custom tech-pack execution</li>
+              <li>Certified vegetable-tanned hides</li>
+              <li>Global door-to-door freight forwarding</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Client Reviews -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="sub-label">TRUSTED BY TRAVELLERS & EXECUTIVES</span>
+          <h2 class="title-main">Words from Our Patrons</h2>
+        </div>
+
+        <div class="reviews-triad">
+          <div class="review-tile">
+            <div class="stars">★★★★★</div>
+            <p>"I was quoted ₹38,000 for a lambskin cafe racer in a Bandra boutique. Visited Leather Touch at Kala Killa, chose the exact hide, and got it custom tailored for ₹9,500. The craftsmanship and YKK brass zip are superb. Living in BKC, their 25km local delivery reached me within hours."</p>
+            <div class="tile-author">
+              <strong>Sameer Merchant</strong>
+              <span>BKC, Mumbai • Custom Jacket Patron</span>
+            </div>
+          </div>
+
+          <div class="review-tile">
+            <div class="stars">★★★★★</div>
+            <p>"Ordered their Waxed Buffalo Travel Duffel for weekend trips to Alibaug and Goa. The leather feels heavy, thick, and durable. Rain bounced right off it. It has already developed a gorgeous deep caramel patina after 4 months."</p>
+            <div class="tile-author">
+              <strong>Natasha Godrej</strong>
+              <span>Worli, Mumbai • Travel Duffel</span>
+            </div>
+          </div>
+
+          <div class="review-tile">
+            <div class="stars">★★★★★</div>
+            <p>"We ordered 40 customized leather conference folios with our firm's embossed crest. Flawless stitch density, delivered on time, and every client complimented the natural leather fragrance."</p>
+            <div class="tile-author">
+              <strong>Rohan Kapadia</strong>
+              <span>Fort, Mumbai • Corporate Gifting</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit Workshop -->
+    <section class="section workshop-section" id="workshop">
+      <div class="container workshop-flex">
+        <div class="workshop-info">
+          <span class="sub-label">DIRECT STOREFRONT & CUTTING BENCH</span>
+          <h2 class="title-main">Visit Us at Kala Killa, Dharavi</h2>
+          <p>Touch the hides, smell the natural vegetable tannins, and select your leather in person with our master craftsmen.</p>
+
+          <div class="addr-box">
+            <p><strong>Shop No. 06, Kala Killa, Sant Rohidas Marg</strong><br>
+            Sion-Bandra Link Road, Opposite Sahil Hotel,<br>
+            Dharavi, Mumbai, Maharashtra 400017</p>
+
+            <p style="margin-top:1rem;">
+              <strong>Call / WhatsApp:</strong> <a href="tel:+919967896040">+91 99678 96040</a> / <a href="tel:+919323029601">+91 93230 29601</a><br>
+              <strong>Hours:</strong> Monday to Sunday: 10:30 AM – 9:30 PM
+            </p>
+          </div>
+
+          <div class="workshop-btns">
+            <a href="https://wa.me/919967896040?text=Hello%20Leather%20Touch,%20I%20want%20to%20inquire%20about%20leather%20jackets" class="btn btn-primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a href="https://maps.google.com/?q=Kala+Killa+Dharavi+Mumbai" class="btn btn-outline" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+
+        <div class="workshop-visual">
+          <div class="artisan-badge-card">
+            <h3>Kala Killa Workshop Hub</h3>
+            <p>19.0435° N, 72.8570° E</p>
+            <span class="radius-indicator">Active 25km Same-Day Express Zone</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">LEATHER TOUCH</div>
+        <p>Pure Handcrafted Full-Grain Leather Goods. Made by master artisans in Kala Killa, Dharavi, Mumbai.</p>
+        <p class="copyright">© 2026 Leather Touch. Engineered with strict 25km local express radius constraint.</p>
+      </div>
+      <div>
+        <h4>Signature Lines</h4>
+        <ul>
+          <li>Full-Grain Lambskin Biker Jackets</li>
+          <li>Waxed Buffalo Weekend Duffels</li>
+          <li>Executive 15.6" Laptop Messengers</li>
+          <li>Solid Brass Hardware Belts</li>
+          <li>24K Gold Hot-Foil Monogramming</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Artisan Commitment</h4>
+        <ul>
+          <li>100% Zero Synthetic PU / Pleather</li>
+          <li>Direct Bench Pricing (Zero Retail Markups)</li>
+          <li>Strict 25km Local Messenger Boundary</li>
+          <li>Lifetime Stitching Guarantee</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart & 25km Checkout Modal -->
+  <div class="modal-overlay hidden" id="cartModal" role="dialog" aria-modal="true" aria-labelledby="cartHeading">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="cartHeading">Artisan Shopping Bag</h3>
+        <button class="modal-close" id="closeCartBtn" aria-label="Close Bag">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="cartGeoAlert" class="geo-alert-box hidden"></div>
+        <div id="cartItemsList" class="cart-items-container">
+          <p style="color:var(--text-muted); text-align:center; padding:1.5rem;">Your bag is empty.</p>
+        </div>
+        <div class="cart-total-bar" id="cartTotalRow" style="display:none;">
+          <span>Total (Direct Bench Price):</span>
+          <span id="cartTotalPrice" class="cart-grand-total">₹0</span>
+        </div>
+
+        <form id="checkoutForm" class="checkout-form" style="display:none;">
+          <h4>Order Fulfillment (25km Local Delivery Verification)</h4>
+          <div class="form-row">
+            <label for="cName">Recipient Name</label>
+            <input type="text" id="cName" class="form-input" required placeholder="Full Name">
+          </div>
+          <div class="form-row">
+            <label for="cPhone">Phone Number</label>
+            <input type="tel" id="cPhone" class="form-input" required placeholder="+91 98XXXXXXXX">
+          </div>
+          <div class="form-row">
+            <label for="cAddress">Mumbai Street Address</label>
+            <textarea id="cAddress" class="form-input" rows="2" required placeholder="Flat/Building, Street, Mumbai Pincode"></textarea>
+          </div>
+          <button type="submit" id="btnPlaceOrder" class="btn btn-primary btn-block">Confirm Workshop Direct Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Owner Admin Modal -->
+  <div class="modal-overlay hidden" id="ownerModal" role="dialog" aria-modal="true" aria-labelledby="ownerHeading">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h3 id="ownerHeading">Leather Touch — Workshop Owner Dashboard</h3>
+        <button class="modal-close" id="closeOwnerBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div id="ownerAuth">
+          <p>Enter Master Workshop PIN to inspect incoming orders and bespoke requests:</p>
+          <div style="display:flex; gap:0.5rem; margin-top:0.75rem;">
+            <input type="password" id="ownerPin" class="form-input" placeholder="PIN: 1234" maxlength="4">
+            <button id="btnOwnerLogin" class="btn btn-primary">Unlock</button>
+          </div>
+          <span id="ownerPinErr" class="error-text hidden">Incorrect Workshop Security PIN</span>
+        </div>
+
+        <div id="ownerDashboard" class="hidden">
+          <div class="admin-summary-cards">
+            <div class="sum-card">
+              <span class="sum-num" id="dashOrderCount">0</span>
+              <span class="sum-label">Orders Placed</span>
+            </div>
+            <div class="sum-card">
+              <span class="sum-num" id="dashBespokeCount">0</span>
+              <span class="sum-label">Bespoke Inquiries</span>
+            </div>
+          </div>
+
+          <h4>Recent Workshop Orders</h4>
+          <table class="owner-table">
+            <thead>
+              <tr>
+                <th>Order #</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th>Recipient</th>
+                <th>Distance</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="ownerOrderRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
